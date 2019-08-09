@@ -1,16 +1,27 @@
 <template>
-  <div >
-      <div class="InputField">
-        <label for="Charactername">Charactername</label>
-        <input type="text" id="Charactername" v-model="character.name" placeholder="Der Name deines Characters">
+  <div class="wrapper" v-if="species && species.name">
+      <div  class="Field">
+         <b>Name:</b> {{species.name}}
       </div>
-      Wähle die Rasse deines Helden!
-      <div v-for="(spezie,i) in spezien" v-bind:key="i">
-        <Button>{{spezie.name}}</Button>
+      <div  class="Field">
+         <b>AP Kosten:</b> {{species.apWert}}
+      </div>
+      <div  class="Field">
+         <b>Basis Lebensenergie:</b> {{species.basisLebensEnergie}}
+      </div>
+      <div  class="Field">
+         <b>Basis Seelenkraft:</b> {{species.basisSeelenkraft}}
+      </div>
+      <div  class="Field">
+         <b>Basis Zähigkeit:</b> {{species.basisZähigkeit}}
+      </div>
+      <div  class="Field">
+         <b>Basis Geschwindigkeit:</b> {{species.basisGeschwindigkeit}}
+      </div>
+      <div  class="Field">
+         <b>Veränderungen:</b> {{species.eigenschaftsänderungen.text}}
       </div>
 
-      <button @click="$router.push({name:'hero-generator'})">Zurück zur Heldengallerie</button>
-      <button>Weiter zur Namensgebung</button>
   </div>
 </template>
 
@@ -25,12 +36,13 @@ export default {
       }
     }
   },
-  components: {
+  computed: {
 
+  },
+  components: {
   },
   data () {
     return {
-      
     }
   },
   created () {
@@ -42,11 +54,11 @@ export default {
 
 <style scoped>
 .wrapper {
-    display: flex;
-     flex-wrap: wrap;
+    display: block;
+
   }
-  .InputField{
-    width: 300px;
-    padding: 30px;
+  .Field {
+    padding-right: 30px;
+    width: 100%;
   }
 </style>

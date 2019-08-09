@@ -1,3 +1,5 @@
+import Eigenschaften from './eigenschaften'
+
 const Spezien = {
   elf: {
     id: 0,
@@ -9,13 +11,14 @@ const Spezien = {
     basisZähigkeit: -6,
     basisGeschwindigkeit: 8,
     eigenschaftsänderungen: {
-      veränderung: [
+      text: 'IN + 1, GE + 1',
+      change: [
         {
-          eigenschaft: 'IN',
+          eigenschaft: Eigenschaften.Intuition.tag,
           wert: 1
         },
         {
-          eigenschaft: 'GE',
+          eigenschaft: Eigenschaften.Gewandtheit.tag,
           wert: 1
         }
       ]

@@ -1,6 +1,9 @@
 <template>
   <div >
-      ProfileEditor
+       <div class="InputField">
+        <label for="Charactername">Charactername</label>
+        <input type="text" id="Charactername" v-model="character.name" placeholder="Der Name deines Characters">
+      </div>
   </div>
 </template>
 
@@ -16,7 +19,7 @@
     },
     data () {
       return {
-  
+        character: {}
       }
     },
     created () {

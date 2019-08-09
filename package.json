@@ -1,5 +1,5 @@
 {
-  "name": "dsahilfswerjzeug",
+  "name": "dsahilfswerkzeug",
   "version": "0.0.1",
   "description": "An electron-vue project",
   "author": "Christian Sacher <reyfin@gmx.de>",
@@ -19,15 +19,14 @@
   "main": "./dist/electron/main.js",
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "^4.3.1",
-    "bootstrap-vue": "^2.0.0-rc.27",
     "vue": "^2.6.10",
     "vue-electron": "^1.0.6",
     "vue-lodash": "^2.0.2",
     "vue-material": "^1.0.0-beta-11",
-    "vue-router": "^3.0.1",
+    "vue-router": "^3.1.2",
     "vuex": "^3.0.1",
-    "vuex-electron": "^1.0.0"
+    "vuex-electron": "^1.0.0",
+    "write-file-atomic": "^3.0.0"
   },
   "devDependencies": {
     "ajv": "^6.5.0",
@@ -39,12 +38,11 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "babili-webpack-plugin": "^0.1.2",
-    "bootstrap": "^4.3.1",
     "cfonts": "^2.1.2",
     "chalk": "^2.4.1",
     "copy-webpack-plugin": "^4.5.1",
     "cross-env": "^5.1.6",
-    "css-loader": "^0.28.11",
+    "css-loader": "^3.2.0",
     "del": "^3.0.0",
     "devtron": "^1.4.0",
     "electron": "^2.0.4",
@@ -68,7 +66,7 @@
     "node-sass": "^4.12.0",
     "popper.js": "^1.15.0",
     "portal-vue": "^2.1.4",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^7.2.0",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "vue-cli-plugin-bootstrap-vue": "^0.4.0",
@@ -116,5 +114,5 @@
       "icon": "build/icons"
     }
   },
-  "license": null
+  "license": "MIT"
 }

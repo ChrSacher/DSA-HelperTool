@@ -28,7 +28,6 @@ const Character = {
   removeSkill: function () {
   },
   evaluateSkills: function () {
-  },
-  
+  }
 }
 export default Character

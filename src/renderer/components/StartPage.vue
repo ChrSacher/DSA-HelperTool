@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper">
-    <button @click="$router.push({ name: 'hero-generator'})">To Hero Generator</button>
-    <button @click="$router.push({ name: 'start-page'})">To Landing Page</button>
+    <md-button md-ripple class="md-raised" @click="$router.push({ name: 'hero-generator'})">To Hero Generator</md-button>
+    <md-button md-ripple class="md-raised" @click="$router.push({ name: 'start-page'})">To Landing Page</md-button>
   </div>
 </template>
 

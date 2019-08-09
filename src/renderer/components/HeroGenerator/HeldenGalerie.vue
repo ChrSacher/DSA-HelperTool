@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <button @click="$router.push({name:'hero-generator-spezieneditor'})">Neuen Charakter erstellen</button>
+    <md-button md-ripple class="md-raised" @click="$router.push({name:'hero-generator-spezieneditor'})">Neuen Charakter erstellen</md-button>
   </div>
 </template>
 

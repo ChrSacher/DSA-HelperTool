@@ -2,7 +2,7 @@
   <div>
      <md-tabs class="md-transparent" md-alignment="fixed">
       <md-tab id="tab-home" md-label="Spezieneditor" exact>
-        <SpeziesEditor></SpeziesEditor>
+        <SpeziesEditor :templateCharacter="character"></SpeziesEditor>
       </md-tab>
       <md-tab id="tab-profil" md-label="Profil" >
         <ProfileEditor></ProfileEditor>
@@ -42,6 +42,7 @@
   import ZauberEditor from '@/components/HeroGenerator/ZauberEditor'
   import LiturgienEditor from '@/components/HeroGenerator/LiturgienEditor'
   import gearEditor from '@/components/HeroGenerator/gearEditor'
+  import Character from '@/containers/models/CharacterModel'
   export default {
     name: 'HeroGenerator',
     props: {
@@ -69,7 +70,11 @@
       }
     },
     created () {
-      this.character = this.lodash.cloneDeep(this.templateCharacter)
+      if (!this.templateCharacter || this.lodash.isEmpty(this.templateCharacter)) {
+        this.character = Object.create(Character)
+      } else {
+        this.character = this.templateCharacter
+      }
     },
     methods: {
     }

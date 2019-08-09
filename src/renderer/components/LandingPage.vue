@@ -17,12 +17,12 @@
             internal configurations, using the project structure, building your application,
             and so much more.
           </p>
-          <button @click="open('https://simulatedgreg.gitbooks.io/electron-vue/content/')">Read the Docs</button><br><br>
+          <md-button @click="open('https://simulatedgreg.gitbooks.io/electron-vue/content/')">Read the Docs</md-button><br><br>
         </div>
         <div class="doc">
           <div class="title alt">Other Documentation</div>
-          <button class="alt" @click="open('https://electron.atom.io/docs/')">Electron</button>
-          <button class="alt" @click="open('https://vuejs.org/v2/guide/')">Vue.js</button>
+          <md-button class="alt" @click="open('https://electron.atom.io/docs/')">Electron</md-button>
+          <md-button class="alt" @click="open('https://vuejs.org/v2/guide/')">Vue.js</md-button>
         </div>
       </div>
     </main>
@@ -107,7 +107,7 @@
     margin-bottom: 10px;
   }
 
-  .doc button {
+  .doc md-button {
     font-size: .8em;
     cursor: pointer;
     outline: none;
@@ -121,7 +121,7 @@
     border: 1px solid #4fc08d;
   }
 
-  .doc button.alt {
+  .doc md-button.alt {
     color: #42b983;
     background-color: transparent;
   }
