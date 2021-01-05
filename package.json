@@ -18,7 +18,7 @@
   },
   "main": "./dist/electron/main.js",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "vue": "^2.6.10",
     "vue-electron": "^1.0.6",
     "vue-lodash": "^2.0.2",
